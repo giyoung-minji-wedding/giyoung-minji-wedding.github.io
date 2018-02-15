@@ -41,6 +41,25 @@
         <!-- <link href="css/skin/light-teal/light-teal-reverse-navbar.css" rel="stylesheet" media="screen"> -->
         <!-- <link href="css/skin/pattern/pattern-1.css" rel="stylesheet" media="screen"> -->
 
+		<SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT">  
+			expireDate = new Date 
+			expireDate.setMonth(expireDate.getMonth()+6) 
+			hitCt = eval(cookieVal("pageHit")) 
+			hitCt++ 
+			document.cookie = "pageHit="+hitCt+";expires=" + expireDate.toGMTString() 
+			
+			function cookieVal(cookieName) { 
+			thiscookie = document.cookie.split("; ") 
+			for (i=0; i<thiscookie.length; i++) { 
+			if (cookieName == thiscookie[i].split("=")[0]) { 
+			return thiscookie[i].split("=")[1] 
+			} 
+			} 
+			return 0 
+			} 
+			
+		
+		</SCRIPT> 
 
 
 
@@ -93,7 +112,7 @@
                                     </div>
                                     <div id="banner-date" class="strokeme">
                                     	- 2018.04.28 오후 3시 -</br>
-																			삼성전자 R4 1층 디지털홀
+										삼성전자 R4 1층 디지털홀</br>
                                     </div>
 
 								</div>
@@ -1038,7 +1057,12 @@
 
                         	<div class="section-title animation fadeInUp">
                         		<h2>
-                            		고맙습니다.
+										<SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT"> 
+											
+											document.write("축하해주시는 <font color=black>" + hitCt + "</font> 분께</br>진심으로 감사드립니다.") 
+											
+											</SCRIPT>
+                            		<!-- 고맙습니다. -->
                             	</h2>
 
                             	<p>
